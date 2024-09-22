@@ -5,6 +5,8 @@ import p3 from '../assets/p3.png'
 import p4 from '../assets/p4.jpeg'
 import p5 from '../assets/p5.jpeg'
 import p6 from '../assets/p6.png'
+import p7 from '../assets/p7.jpg'
+
 import { FaGithub } from 'react-icons/fa6'
 
 export const Projects = () => {
@@ -39,7 +41,11 @@ export const Projects = () => {
             image: p6,
             github: "https://github.com/Reenku19/Reenu_Boutique.git"
         },
-        
+         {
+            id: 7,
+            image: p7,
+            github: "https://github.com/Reenku19/Portfolio_Website.git"
+        },
     ]
     return (
         <div name="Projects" className='w-full md:min-h-screen bg-black' id="project">
