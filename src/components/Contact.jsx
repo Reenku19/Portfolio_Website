@@ -29,7 +29,7 @@ export const Contact = () => {
           <div className='flex-1 w-full'>
 
 
-            <form action='https://getform.io/f/ajjegjza' method='POST'>
+            <form name="contact" netlify>
                 <div>
                     <label htmlFor="name" className='block mb-2'>Your Name</label>
                     <input type="text"
