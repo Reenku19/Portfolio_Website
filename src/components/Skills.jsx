@@ -56,9 +56,9 @@ export const Skills = () => {
     ]
     return (
         <div name="skills" className='w-full md:min-h-screen bg-black' id="skill">
-            <div className='max-w-screen-lg p-4 h-full w-full mx-auto flex flex-col justify-center items-center md:items-start text-white'>
-                <div className='py-6 sm:text-center'>
-                    <h2 className='text-4xl sm:text-5xl font-bold inline border-b-4 border-gray-500 '>Skills</h2>
+            <div className='max-w-screen-xl p-4 h-full w-full mx-auto flex flex-col justify-center items-center md:items-start text-white'>
+                <div className=' mx-auto px-6 md:px-12 lg:px-18'>
+                    <h2 className='text-4xl font-bold text-center mb-12 '>Skills</h2>
                 </div>
 
                 <div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0'>
