@@ -29,7 +29,8 @@ export const Contact = () => {
           <div className='flex-1 w-full'>
 
 
-            <form name="contact">
+            <form action="https://reenkuchoudharyportfolio.netlify.app/submit" method="POST">
+>
                 <div>
                     <label htmlFor="name" className='block mb-2'>Your Name</label>
                     <input type="text"
