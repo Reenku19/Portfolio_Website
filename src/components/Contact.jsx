@@ -30,8 +30,9 @@ export const Contact = () => {
 
 
               <form name="contact" method="POST" data-netlify="true">
+                                  <input type="hidden" name="form-name" value="contact" />
+
                 <div>
-                  <input type="hidden" name="form-name" value="contact" />
                   <label htmlFor="name" className='block mb-2'>Your Name</label>
                     <input required type="text"
                     name="name"
