@@ -29,11 +29,17 @@ export const Contact = () => {
           <div className='flex-1 w-full'>
 
 
-            <form action='https://getform.io/f/ajjegjza' method='POST'>
+            <form data-netlify="true"
+               name="Contact_Me"
+                method="post"
+                 onSubmit={handleSubmit}
+              >
                 <div>
+                      <input type="hidden" name="form-name" value="Contact_Me" />
                     <label htmlFor="name" className='block mb-2'>Your Name</label>
                     <input type="text"
                     name="name" 
+                      onChange={handleChange}
                     className='w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none
                     focus:border-green-400'
                     placeholder='Enter You Name'/>
@@ -42,6 +48,7 @@ export const Contact = () => {
                     <label htmlFor="email" className='block mb-2'>Email</label>
                     <input type="email" 
                      name="mail"
+                      onChange={handleChange}
                     className='w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none
                     focus:border-green-400'
                     placeholder='Enter You Email'/>
@@ -50,6 +57,7 @@ export const Contact = () => {
                     <label htmlFor="message" className='block mb-2'>Message</label>
                     <textarea type="text" 
                       name="message"
+                      onChange={handleChange}
                     className='w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none
                     focus:border-green-400'
                     rows="5"
