@@ -66,4 +66,16 @@ export const Contact = () => {
     </div>
   )
 }
+export const handleSubmit = (event) => {
+  event.preventDefault();
+  const formData = new FormData(event.target);
+  
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
+  })
+  .then(() => alert("Form submitted successfully"))
+  .catch((error) => alert(error));
+};
 
