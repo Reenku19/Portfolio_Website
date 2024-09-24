@@ -62,7 +62,7 @@ import { FaEnvelope, FaMapMarkedAlt, FaPhone } from 'react-icons/fa'
           </div>
 
           
-          
+           <div className='flex-1 w-full'>
              {isSubmitted ? (
           <p className="text-green-500 font-semibold">
             Thank you for your message! We'll get back to you soon.
@@ -72,7 +72,7 @@ import { FaEnvelope, FaMapMarkedAlt, FaPhone } from 'react-icons/fa'
             {/* Netlify hidden input */}
             <input type="hidden" name="form-name" value="contact" />
 
-                <div className='flex-1 w-full'>
+               
                 <div>
                   <label htmlFor="name" className='block mb-2'>Your Name</label>
                     <input required 
