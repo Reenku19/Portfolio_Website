@@ -31,9 +31,9 @@ export const Contact = () => {
 
             <form name="contact" action="/contact" method="post">
                 <div>
-                      <input type="hidden" name="form-name" value="Contact_Me" />
+                      <input type="hidden" name="form-name" value="contact" />
                     <label htmlFor="name" className='block mb-2'>Your Name</label>
-                    <input type="text"
+                    <input required type="text"
                     name="name"
                     className='w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none
                     focus:border-green-400'
@@ -41,7 +41,7 @@ export const Contact = () => {
                 </div>
                 <div>
                     <label htmlFor="email" className='block mb-2'>Email</label>
-                    <input type="email" 
+                    <input required type="email" 
                      name="mail"
                     className='w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none
                     focus:border-green-400'
@@ -49,7 +49,7 @@ export const Contact = () => {
                 </div>
                 <div>
                     <label htmlFor="message" className='block mb-2'>Message</label>
-                    <textarea type="text" 
+                    <textarea required type="text" 
                       name="message"
                     className='w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none
                     focus:border-green-400'
