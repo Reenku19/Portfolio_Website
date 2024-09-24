@@ -1,41 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { FaEnvelope, FaMapMarkedAlt, FaPhone } from 'react-icons/fa'
 
- export const Contact = () => {
-  const [formState, setFormState] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [errorMessage, setErrorMessage] = useState(null);
-
-  // Handle form submission
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const formData = new FormData(event.target);
-
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(() => {
-        setIsSubmitted(true);
-        setErrorMessage(null);
-      })
-      .catch((error) => setErrorMessage(error.message));
-  };
-
-  // Handle form input change
-  const handleInputChange = (event) => {
-    const { name, value } = event.target;
-    setFormState({ ...formState, [name]: value });
-  };
-
-
-    
+export const Contact = () => {
   return (
     <div className="bg-black text-white py-20" name="contact" id="contact">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
@@ -60,71 +26,42 @@ import { FaEnvelope, FaMapMarkedAlt, FaPhone } from 'react-icons/fa'
                 <span>Bengaluru, Karnataka, India</span>
             </div>
           </div>
+          <div className='flex-1 w-full'>
 
-          
-           <div className='flex-1 w-full'>
-             {isSubmitted ? (
-          <p className="text-green-500 font-semibold">
-            Thank you for your message! We'll get back to you soon.
-          </p>
-        ) : (
-               <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
-            {/* Netlify hidden input */}
-            <input type="hidden" name="form-name" value="contact" />
 
-               
+            <form action='https://getform.io/f/ajjegjza' method='POST'>
                 <div>
-                  <label htmlFor="name" className='block mb-2'>Your Name</label>
-                    <input required 
-                      type="text"
-                      id="name"
-                    name="name"
+                    <label htmlFor="name" className='block mb-2'>Your Name</label>
+                    <input type="text"
+                    name="name" 
                     className='w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none
                     focus:border-green-400'
-                    placeholder='Enter You Name'
-                      value={formState.name}
-                onChange={handleInputChange}
-                      />
+                    placeholder='Enter You Name'/>
                 </div>
                 <div>
                     <label htmlFor="email" className='block mb-2'>Email</label>
-                    <input required 
-                      type="email" 
-                      id="email"
-                     name="email"
+                    <input type="email" 
+                     name="mail"
                     className='w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none
                     focus:border-green-400'
-                    placeholder='Enter You Email'
-                       value={formState.email}
-                onChange={handleInputChange}
-                      />
+                    placeholder='Enter You Email'/>
                 </div>
                 <div>
                     <label htmlFor="message" className='block mb-2'>Message</label>
-                    <textarea required
-                      type="text"
-                      id="message"
+                    <textarea type="text" 
                       name="message"
                     className='w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none
                     focus:border-green-400'
                     rows="5"
-                    placeholder='Enter You Message'
-                      value={formState.message}
-                onChange={handleInputChange} 
-                      />
+                    placeholder='Enter You Message'/>
                 </div>
-
-          {errorMessage && <p className="text-red-500">{errorMessage}</p>}
-                  
-                <button type="submit" className='bg-gradient-to-r from-green-400 to-blue-500 text-white hidden md:inline
-            transform transition-transform duration-300 hover:scale-105 px-8 py-2 rounded-full' >Submit</button>
+                <button className='bg-gradient-to-r from-green-400 to-blue-500 text-white hidden md:inline
+            transform transition-transform duration-300 hover:scale-105 px-8 py-2 rounded-full'>Submit</button>
+            </form>
           </div>
-        </form>
-      )}
         </div>
       </div>
     </div>
-  );
-};
-
+  )
+}
 
