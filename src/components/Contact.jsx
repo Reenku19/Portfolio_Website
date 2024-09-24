@@ -29,10 +29,10 @@ export const Contact = () => {
           <div className='flex-1 w-full'>
 
 
-            <form name="contact" action="/contact" method="post">
+              <form name="contact" method="POST" data-netlify="true">
                 <div>
-                      <input type="hidden" name="form-name" value="contact" />
-                    <label htmlFor="name" className='block mb-2'>Your Name</label>
+                  <input type="hidden" name="form-name" value="contact" />
+                  <label htmlFor="name" className='block mb-2'>Your Name</label>
                     <input required type="text"
                     name="name"
                     className='w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none
@@ -42,7 +42,7 @@ export const Contact = () => {
                 <div>
                     <label htmlFor="email" className='block mb-2'>Email</label>
                     <input required type="email" 
-                     name="mail"
+                     name="email"
                     className='w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none
                     focus:border-green-400'
                     placeholder='Enter You Email'/>
@@ -56,8 +56,8 @@ export const Contact = () => {
                     rows="5"
                     placeholder='Enter You Message'/>
                 </div>
-                <button className='bg-gradient-to-r from-green-400 to-blue-500 text-white hidden md:inline
-            transform transition-transform duration-300 hover:scale-105 px-8 py-2 rounded-full' type="submit">Submit</button>
+                <button type="submit" className='bg-gradient-to-r from-green-400 to-blue-500 text-white hidden md:inline
+            transform transition-transform duration-300 hover:scale-105 px-8 py-2 rounded-full' >Submit</button>
             </form>
           </div>
         </div>
