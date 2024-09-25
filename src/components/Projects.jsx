@@ -49,7 +49,7 @@ export const Projects = () => {
         
     ]
     return (
-        <div name="Projects" className='w-full md:min-h-screen bg-black' id="project">
+        <div name="Projects" className='w-full md:min-h-screen py-16 bg-black' id="project">
             <div className='max-w-screen-lg p-4 h-full w-full mx-auto flex flex-col justify-center items-center md:items-start text-white'>
                 <div className='mx-auto px-6 md:px-12 lg:px-18'>
                     <h2 className='text-4xl font-bold text-center mb-12' >Projects</h2>
