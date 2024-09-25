@@ -19,22 +19,22 @@ export const Projects = () => {
         {
             id: 2,
             image: p2,
-            github: "https://github.com"
+            github: "https://github.com/Reenku19/AWS_VPC_Terraform.git"
         },
         {
             id: 3,
             image: p3,
-            github: "https://github.com"
+            github: "https://github.com/Reenku19/Static-Website-hosting.git"
         },
         {
             id: 4,
             image: p4,
-            github: "https://github.com"
+            github: "https://github.com/Reenku19/EFS.git"
         },
         {
             id: 5,
             image: p5,
-            github: "https://github.com"
+            github: "https://github.com/Reenku19/RDS-Backup.git"
         },
         {
             id: 6,
