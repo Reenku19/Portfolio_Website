@@ -54,8 +54,8 @@ export const Contact = () => {
                     focus:border-green-400'
                     rows="5"
                     placeholder='Enter You Message'/>
-                </div>
-                <button className='bg-gradient-to-r from-green-400 to-blue-500 text-white hidden md:inline
+                </div><br></br>
+                <button className='bg-gradient-to-r from-green-400 to-blue-500 text-white md:inline
             transform transition-transform duration-300 hover:scale-105 px-8 py-2 rounded-full'>Submit</button>
             </form>
           </div>
