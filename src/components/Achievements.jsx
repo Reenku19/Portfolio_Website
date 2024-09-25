@@ -28,7 +28,7 @@ export const Achievements = () => {
     ]
 
     return (
-        <div className="bg-black text-white py-30" id="achievement">
+        <div className="bg-black text-white py-16" id="achievement">
             <div className="container mx-auto px-6 md:px-12 lg:px-18">
                 <h2 className="text-4xl font-bold text-center mb-12">Achievements</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
