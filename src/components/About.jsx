@@ -22,7 +22,7 @@ export const About = () => {
 
                         </p>
                         <div className="space-y-4">
-                            <div className="flex items-center">
+                            <div className="flex-row items-center">
                                 <label htmlFor="htmlandcss" className="w-2/12">
                                     Docker
                                 </label>
@@ -33,7 +33,7 @@ export const About = () => {
                                     ></div>
                                 </div>
                             </div>
-                            <div className="flex items-center">
+                            <div className="flex-row items-center">
                                 <label htmlFor="htmlandcss" className="w-2/12">
                                     Github
                                 </label>
@@ -44,7 +44,7 @@ export const About = () => {
                                     ></div>
                                 </div>
                             </div>
-                            <div className="flex items-center">
+                            <div className="flex-row items-center">
                                 <label htmlFor="htmlandcss" className="w-2/12">
                                     Terraform
                                 </label>
