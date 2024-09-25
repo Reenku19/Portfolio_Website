@@ -4,6 +4,7 @@ import c2 from "../assets/c2.png"
 import c3 from "../assets/c3.png"
 import c4 from "../assets/c4.png"
 import c5 from "../assets/c5.png"
+import c6 from "../assets/c6.png"
 
 export const Certifications = () => {
     const certifications = [
@@ -35,13 +36,21 @@ export const Certifications = () => {
             image: c4,
             credential: "https://olympus.mygreatlearning.com/courses/47906/certificate",
         },
-        {
+         {
             id: 5,
+            name: "Getting Started with GitHub",
+            org: "Coursera",
+            image: c6,
+            credential: "https://www.coursera.org/account/accomplishments/verify/7786PVWPXOS9",
+        },
+        {
+            id: 6,
             name: "Python Fundamentals",
             org: "Great Learning",
             image: c5,
             credential: "https://www.mygreatlearning.com/certificate/VDUUAVSE",
         },
+        
     ]
 
     return (
