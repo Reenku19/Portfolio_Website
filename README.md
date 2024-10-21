@@ -1,10 +1,10 @@
-Portfolio Website Development Using React and Tailwind CSS
+**Portfolio Website Development Using React and Tailwind CSS**
 
 
 This project involves the creation of a personal portfolio website that showcases an individual’s skills, experience, projects, and other relevant information in a visually appealing and responsive manner. The project leverages React, a powerful JavaScript library for building user interfaces, and Tailwind CSS, a utility-first CSS framework, to design and implement a professional, fast, and fully responsive portfolio site. A portfolio website serves as an essential platform for showcasing one's skills, experience, and projects in an organized and visually appealing manner.
 
 
-TECHNOLOGIES USED
+**TECHNOLOGIES USED**
 
 1.	React.js: A JavaScript library for building dynamic, component-based user interfaces.
 
@@ -19,7 +19,7 @@ TECHNOLOGIES USED
 6.	Git/GitHub: For version control and hosting the project repository.
 
 
-ARCHITECTURE
+**ARCHITECTURE**
 
 
 •	Component-Based Architecture: The project uses a component-driven approach, breaking down the website into reusable components such as header, footer, project cards, and skill badges.
@@ -27,7 +27,7 @@ ARCHITECTURE
 •	State Management: React's useState and useEffect hooks are used to handle state within the website (e.g., form inputs, theme toggling).
 
 
-METHODOLOGY
+**METHODOLOGY**
 
 1.	Planning:
    
@@ -64,7 +64,7 @@ o	Host the website on a platform such as Vercel or Netlify for easy deployment a
 
 o	Ensure the website is connected to a custom domain for professional presentation.
 
-SNAPSHOTS:
+**SNAPSHOTS:**
 
 ![Screenshot (365)](https://github.com/user-attachments/assets/98634409-c8df-4787-a1f3-c73f5dbbe1ff)
 
