@@ -9,7 +9,7 @@ export const Hero = () => {
         transition-transform duration-300 hover:scale-105'/>
         <h1 className='text-4xl font-bold'>
             I'm {" "}
-            <span className='text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500'>Reenku Choudhary {" "}</span>
+            <span className='text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500'>Reenku Choudhary, {" "}</span>
    Cloud Practitioner
         </h1>
         <p className='mt-4 text-lg text-gray-300'>
